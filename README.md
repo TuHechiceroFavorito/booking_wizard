@@ -5,4 +5,4 @@ Run the following command to install dependencies
 
 `pip install -r requirements.txt`
 
-Kierot, Tricky and Bella
+*Kierot, Tricky and Bella*
