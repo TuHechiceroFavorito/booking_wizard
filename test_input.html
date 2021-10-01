@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=0">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+<!-- CookiePro Cookies Consent Notice start for ucd.ie -->
+<script type="text/javascript" src="https://cookie-cdn.cookiepro.com/consent/f638e53d-11c1-473f-aa7f-b47b6862f492/OtAutoBlock.js" ></script>
+<script src="https://cookie-cdn.cookiepro.com/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="f638e53d-11c1-473f-aa7f-b47b6862f492" ></script>
+<script type="text/javascript">
+function OptanonWrapper() { }
+</script>
+<!-- CookiePro Cookies Consent Notice end for ucd.ie -->
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Gym Booking</title>
+
+    <link href="/apple-touch-icon.png" rel="apple-touch-icon" />
+
+
+<!-- jQuery 3 + migrate JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js" integrity="sha256-91c9XEM8yFH2Mn9fn8yQaNRvJsEruL7Hctr6JiIY7Uw=" crossorigin="anonymous"></script>
+
+<!-- Bootstrap 3.4.1 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+
+<!-- Google Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CRoboto+Slab:100,200,300,400' rel='stylesheet' type='text/css'>
+
+<!-- Google reCaptcha v2 -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<!-- PaymentFont -->
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/paymentfont/1.2.5/css/paymentfont.min.css" />
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha256-NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w=" crossorigin="anonymous" />
+
+<!-- Flag Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.4.0/css/flag-icon.min.css" />
+
+<!-- DataTables -->
+<script type="text/javascript" src="https://cdn.datatables.net/t/bs/dt-1.10.11/datatables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/scroller/1.4.2/js/dataTables.scroller.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/responsive/2.1.1/js/dataTables.responsive.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/t/bs/dt-1.10.11/datatables.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.1.1/css/responsive.dataTables.min.css" />
+
+<!-- Select2 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/js/select2.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/css/select2.min.css" rel="stylesheet" />
+
+<!-- CKEditor -->
+<script type="text/javascript" src="/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="/ckeditor/adapters/jquery.js"></script>
+
+<!-- CodeMirror -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.js" integrity="sha256-id5Qk/MwQJxgNlDFDpVymUuReXfTUZiaQKb8arrddQM=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/mode/sql/sql.min.js" integrity="sha256-3WAHA5h12+TuoFn+CFUM0NUrDiM68m2Iu6v7ijJYh20=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/addon/hint/show-hint.min.js" integrity="sha256-s030a2NmcCVudLqFb85WQPTfkO1LlDXHxo3XuWxGYGA=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/addon/hint/sql-hint.min.js" integrity="sha256-+lZ34RlzAR6AHKaFLiwYZFM+yJwSzADpjwC40QoIfds=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.css" integrity="sha256-vZ3SaLOjnKO/gGvcUWegySoDU6ff33CS5i9ot8J9Czk=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/addon/hint/show-hint.min.css" integrity="sha256-Ng5EdzHS/CC37tR7tE75e4Th9+fBvOB4eYITOkXS22Q=" crossorigin="anonymous" />
+
+<!-- Infohub -->
+<script type="text/javascript" src="/infohub4/js/infohub.js?11072019"></script>
+<link rel="stylesheet" href="/infohub4/css/infohub.css?20062018" type="text/css" />
+
+<style>
+/*Fix for Chrome 66*/
+#expanding-panel .panel-default .panel-body ul li {
+    position: inherit;
+}
+
+@media (min-width: 768px) {
+	#hulogin.col-sm-6 {
+		border-right: 1px solid #ccc;
+	}
+}
+
+@media print {
+#breadcrumb, #cookie, #browser-warning, .data .btn-group {display:none !important;}
+}
+</style>
+
+<script>
+$(function(){
+    $("#UserName").focus();
+    $("#seccode").focus();
+    $("ul#tablist").append($(".tab-content li[role=presentation]"));
+    $(".nav.nav-tabs li:eq(0) a").tab('show');
+});
+</script>
+
+
+<script>window.dataLayer = window.dataLayer || [];</script>
+
+<!-- <script type="text/javascript" src="/javascript/hubtable_v1_1.js"></script> -->
+</head>
+<body class="global INFOHUB3">
+
+<!-- Cookie and browser message
+	
+<div id="cookie">
+    <div class="container-fluid container">
+        <div class="row">
+            <div class="col-sm-10 col-xs-10">
+                <span class="info-icon glyphicon glyphicon-info-sign"></span>
+<span class="cookie-text">This website uses cookies, by continuing you agree to their use. Learn more about cookies and how to manage them on our <a href="http://www.ucd.ie/cookie-policy/"><span
+        class="underline">cookie policy</span></a></span>
+            </div>
+            <div class="col-sm-2 col-xs-2">
+                <span class="cookie-close">
+          <span class="close-text">Close</span>
+            <span class="close-icon glyphicon glyphicon-remove-circle">
+
+            </span>
+          </span>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+<noscript>
+    <div id="browser-warning" class="user-warning">
+        <div class="container-fluid container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>
+                        <i class="glyphicon glyphicon-info-sign"></i>It appears JavaScript is disabled. To get the most
+                        out of the website
+                        we recommend enabling JavaScript in your browser.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</noscript>
+<!--[if lt IE 9]>
+<div class="old-browser">
+    <div class="container-fluid container">
+        <div class="row">
+            <div class="col-sm-12">
+                <p><i class="glyphicon glyphicon-info-sign"></i> The browser you are using is out of date. To get the
+                    best experience from
+                    this and other websites you should update your browser. <a href="http://browsehappy.com/"
+                                                                               role="link">Learn more about updating
+                        your browser</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<![endif]-->
+
+<!-- Global top nav -->
+
+<nav class="navbar navbar-infohub navbar-static-top">
+  <div class="container-fluid container">
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav" id="global-nav">
+		<li><a href="http://www.ucd.ie/"  target="_blank"><i class=""></i>UCD Home</a></li>
+<li><a href="http://www.ucd.ie/newsandopinion/"  target="_blank"><i class=""></i>News and Opinion</a></li>
+<li><a href="http://www.ucd.ie/registry/keydates.html"  target="_blank"><i class=""></i>Key Dates</a></li>
+<li><a href="http://www.ucd.ie/events/calendar" TARGET="_blank" target="_blank"><i class=""></i>Events</a></li>
+<li><a href="https://hub.ucd.ie/usis/W_HU_MENU.P_PUBLISH?p_tag=DIRECTORY" TARGET="_blank" ><i class=""></i>UCD Directory</a></li>
+<li><a href="http://www.ucd.ie/connect/"  target="_blank"><i class=""></i>UCD Connect</a></li>
+
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right" id="toolbar">
+                <li><a href="#"  id="infohub-search" data-toggle="tooltip" title="Search InfoHub"><i class="fa fa-search"></i></a></li>
+
+
+
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle avatar" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			  <img class="photo" src="W_HU_REPORTING.P_WEB_IMAGE?p_parameters=AC8B80C72F5D83E0AD7570DA7DF4FEA2" alt="Unknown Unknown"> 
+			  <span class="caret"></span></a>
+          <ul class="dropdown-menu" id="personal-nav">
+			<li><a href="W_HU_REPORTING.P_LAUNCH_REPORT?p_report=ID210">My Profile</a></li>
+			<li><a href="W_HU_MENU.P_RUN_PROG?p_program=HU-LOGOUT">Logout</a></li>
+			<li role="separator" class="divider"></li>
+			<li class="dropdown-header">Quick Links</li>
+			<li><a href="W_HU_MENU.P_DISPLAY_MENU?p_menu=ES-HOME&p_parameters=7EF2BF0BB0A5EF13B5B621433D4E6FF8BE938421786A41AE17D2E7852CA9BB80"  ><i class=""></i>External Services Portal</a></li>
+<li><a href="https://ucd-ie.atlassian.net/jira" TARGET="_blank" ><i class=""></i>JIRA</a></li>
+<li><a href="https://my.corehr.com/pls/coreportal_ucdp/" TARGET="_blank" ><i class=""></i>Employee Self Service</a></li>
+<li><a href="http://www.ucd.ie/eprocurement" TARGET="_blank" ><i class=""></i>eProcurement</a></li>
+<li><a href="https://ucd.elements.symplectic.org/" TARGET="_blank" ><i class=""></i>RMS Profiles</a></li>
+<li><a href="https://efin.ucd.ie:9010/forms/frmservlet?config=efin41" TARGET="_blank" ><i class=""></i>eFinancials</a></li>
+<li><a href="https://wshradm.corehr.com/forms/frmservlet?config=ucdp" TARGET="_blank" ><i class=""></i>CoreHR</a></li>
+<li><a href="https://cms.ucd.ie/sm/SiteManager"  ><i class=""></i>TerminalFour Site Manager</a></li>
+<li><a href="https://banner.ucd.ie/applicationNavigator" TARGET="_blank" ><i class=""></i>Banner AppNav/Admin Pages</a></li>
+<li><a href="https://bannerss.ucd.ie/facultySelfService" TARGET="_blank" ><i class=""></i>Banner Faculty Self Service</a></li>
+<li><a href="https://bam.ucd.ie/BannerAccessMgmt/" TARGET="_blank" ><i class=""></i>Banner Access Mgt</a></li>
+<li><a href="https://hub.ucd.ie/usis/W_HU_MENU.P_DISPLAY_MENU?p_menu=IN-HOME"  ><i class=""></i>InfoHub (Live)</a></li>
+<li><a href="https://hubtest.ucd.ie:9010/tst1/W_HU_MENU.P_DISPLAY_MENU?p_menu=IN-HOME" TARGET="_blank" ><i class=""></i>InfoHub on TST1</a></li>
+<li><a href="https://hubtest.ucd.ie:9020/tst2/W_HU_MENU.P_DISPLAY_MENU?p_menu=IN-HOME" TARGET="_blank" ><i class=""></i>InfoHub on TST2</a></li>
+<li><a href="https://hubtest.ucd.ie:9030/tst3/W_HU_MENU.P_DISPLAY_MENU?p_menu=IN-HOME" TARGET="_blank" ><i class=""></i>InfoHub on TST3</a></li>
+<li><a href="https://hubtest.ucd.ie:9040/tst4/W_HU_MENU.P_DISPLAY_MENU?p_menu=IN-HOME" TARGET="_blank" ><i class=""></i>InfoHub on TST4</a></li>
+<li><a href="https://hubtest.ucd.ie:9090/tst9/W_HU_MENU.P_DISPLAY_MENU?p_menu=IN-HOME" TARGET="_blank" ><i class=""></i>Infohub on TST9</a></li>
+
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid container -->
+</nav>
+
+<!-- Header / menu section -->
+
+
+<header>
+	
+    <span id="menuIcon" class="hidden-md hidden-lg">Menu</span>
+    <span id="searchIcon" class="hidden-md hidden-lg"><span class="sr-only">Search icon</span></span>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2 logo">
+                <h1><a href="W_HU_MENU.P_DISPLAY_MENU?p_menu=IN-HOME"><span>UCD InfoHub </span><span>My services &amp; information portal</span></a></h1>
+            </div>
+            <nav class="col-sm-10">
+                <h4 class="outline">Main Navigation</h4>
+
+              	<ul id="mainNav">
+					
+				</ul>
+              	
+            </nav>
+        </div>
+    </div>
+	
+</header>
+
+<div id="mobileMenu" class="hidden-md hidden-lg">
+    <div class="row">     
+		<ul id="mainNavMobile" class="main"></ul>
+		<ul id="toolbarMobile" class="personal"></ul>       
+		<ul id="topNavMobile" class="top"></ul>
+    </div>
+</div>
+
+
+<!-- Breadcrumb -->
+
+<nav id="breadcrumb">
+    <h1 class="outline">Breadcrumb</h1>
+
+    <div class="container">
+        <div class="row">
+          
+          <ul class="col-sm-12" id="breadcrumbs-nav">
+          	<li><a href="W_HU_MENU.P_DISPLAY_MENU?p_menu=IN-HOME">Home</a><li>Gym Booking
+           </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HTMLOPEN -->
+
+<!-- Proc Open -->
+
+<!-- Main content container -->
+
+<main id="single-column-content">
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">	
+
+<h1>Gym Booking</h1>
+
+<div class="narrative"></div>
+
+<div class="panel panel-default">
+
+<div class="panel-body">
+
+<!-- /Proc Open --><span class=errortext>We cannot find your membership. Please try again.</span><br><br>
+<form action="!W_HU_REPORTING.P_RUN_SQL" method="post">
+<input type="hidden" name="p_query" value="SW-GYMANON" />
+<input type="hidden" name="p_confirmed" value="Y" />
+<input type="hidden" name="p_parameters" value="A450F95C75D0F126D32D1FF64557FC5BE3608119B07310D1D9E0C20656AF60AC613D8D39CD5236FDD9B95C7FC606FF4D999B4BE6E4F08A248D0A1B7DCBE52019F08D86E9A61E253CE69BFBAB780BC2193A1124866963A0C0077ACE1EB9C49B2725A5204D4CA00DC8413BBABFF2B7BF4D18FCD9FB700DD1889C4A4C049E17808A5870B022050BF7A61039D6DDD26FFCC5CF09909EE9ED8222F21A23DFF0341A2D90CFC30795CEBCAC41A34C381A80B798AE0EEF0186F937F9A176E2B71F8C32401BA96E58AD14FE027AA8CAFDCC0DE43C33188DFB24011433A3494B0151ABD4798F782E55819786654F529D053EBF8418BBF331BAB0840056F49314BCC33AB0F59D1BD88907C7661CA8A2370F60FF6C8872F1B661400D9DFF33A7D851A488154CD97FE4FD5643C7CC8592317060DEC3C3528186FFD9DC281A2E577250EAADBC026751C447457AE9B0610A7945301937A6BC036D36575EF3D8A250932B36A461C5" />
+Enter Membership Number or Connect Username<br><br>
+<input type="text" name="MEMBER_NO" size="30" maxlength="30" />
+<br><br>
+<input type="submit" value="Proceed with Booking" />
+</form>
+<br><br><a href=W_HU_MENU.P_PUBLISH?p_tag=GYMBOOK class=menubutton>Return to Timetable</a>
+</div>
+</div>
+		</div>
+
+
+	</div>
+
+
+
+<div id="buttonbar">
+<ul><li><a href="javascript:history.back();"  id=previous title="Return to Previous Page" data-toggle="tooltip">Previous Page</a></li></ul>
+</div>
+</div>
+
+</main>
+
+<!-- HTMLCLOSE -->
+
+<footer>
+    <div class="container">
+        <div class="row swap-divs">
+           <div class="col-sm-6 left">
+	<img src="https://www.ucd.ie/t4cms/ucdmaincore_logo-footer.png" alt="University College Dublin" >
+    <p>University College Dublin<br /> Belfield, Dublin 4, Ireland.</p>
+</div>
+
+<div class="col-sm-6 right">
+    <div class="row">
+        <div class="col-sm-4 col-xs-12">
+           <h4>UCD Home</h4>
+<ul>
+<li><a href="http://www.ucd.ie/about-ucd/"  ><i class=""></i>About</a></li>
+<li><a href="http://www.ucd.ie/researchandinnovation/"  ><i class=""></i>Research and Innovation</a></li>
+<li><a href="http://www.ucd.ie/ucdglobal/"  ><i class=""></i>UCD Global</a></li>
+<li><a href="http://www.ucd.ie/collegesandschools/"  ><i class=""></i>Colleges & Schools</a></li>
+
+</ul>    
+        </div>
+        <div class="col-sm-4 col-xs-12">
+           <h4>Useful Links</h4>
+<ul>
+<li><a href="http://www.ucd.ie/privacy.htm" TARGET="_blank" ><i class=""></i>UCD Privacy Statement</a></li>
+<li><a href="https://www.ucd.ie/acceptableusepolicy/" TARGET="_blank" ><i class=""></i>Acceptable Use Policy</a></li>
+
+</ul>    
+        </div>
+        <div class="col-sm-4 col-xs-12">
+            <h4>Contact Details</h4>
+<ul>
+<li><a href="W_HU_REPORTING.P_DISPLAY_QUERY?p_query=ID920-1&p_parameters=FD141C7AC6B6647019782E0E9A60D2167983567503E337DC88C8977508C29019"  ><i class=""></i>Staff Directory</a></li>
+<li><a href="http://www.ucd.ie/maps/"  ><i class=""></i>Campus Map</a></li>
+
+</ul>    
+        </div>
+    </div>
+</div>
+
+          
+          
+        </div>
+    </div>
+</footer>
+
+<div class="modal fade" id="hubModal" tabindex="-1" role="dialog" aria-hidden="true"></div>
+
+
+<script>
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({"page_title":"Gym Member Checking Process","website":"InfoHub Portal","site_folder":"/sisweb/infohub/"});
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M8D5CZ9');</script>
+<!-- End Google Tag Manager -->
+
+</body>
+</html>

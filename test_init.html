@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<HTML  lang="en">
+<head>
+<meta http-equiv="Content-Type" name="" content=""text/html; charset=UTF-8"">
+<meta http-equiv="Pragma" name="Cache-Control" content="no-cache">
+<meta http-equiv="Cache-Control" name="Cache-Control" content="no-cache">
+<meta http-equiv="Content-Script-Type" name="Default_Script_Language" content="text/javascript">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<LINK REL="stylesheet" HREF="/infohub3/css/responsive_v1_04.css" TYPE="text/css">
+<!-- Bootstrap -->
+<link href="/infohub3/css/bootstrap.min.css" rel="stylesheet">
+<script type="text/javascript">
+        (function(document,navigator,standalone) {
+            // prevents links from apps from oppening in mobile safari
+            // this javascript must be the first script in your <head>
+            if ((standalone in navigator) && navigator[standalone]) {
+                var curnode, location=document.location, stop=/^(a|html)$/i;
+                document.addEventListener('click', function(e) {
+                    curnode=e.target;
+                    while (!(stop).test(curnode.nodeName)) {
+                        curnode=curnode.parentNode;
+                    }
+                    // Condidions to do this only on links to your own app
+                    // if you want all links, use if('href' in curnode) instead.
+                    if('href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
+                        e.preventDefault();
+                        location.href = curnode.href;
+                    }
+                },false);
+            }
+        })(document,window.navigator,'standalone');
+    </script>
+<div style="position: absolute; left: 10px; top: 0px"><IMG height=75 width=120 src=\infoimages\USFLogo.png></DIV>
+<STYLE>
+body {background-color: #0E074A; color: #FFF}
+#main {padding: 18px 10px; font-size: 22px}
+input {color: #000}
+#container {background: none}
+#container .navbar {display: none}
+#breadcrumbs h1 {color: #FFF; position: relative; left: 120px; font-size: 44px}
+.module{margin: 0px;padding: 0px 0px}
+.module{border:none; padding:none; border-radius:none; margin-top:none; position:relative; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; background:none; margin-bottom:none;}
+table.datadisplaytable th {background: none; border-left: 0px}
+.module table.plaintable table td {border-left: 0px; border-top: 1px solid yellow; color: white; background: none; font-size: 22px}
+table.datadisplaytable tr.even td {background: none}
+.header0 {border-bottom: 1px solid yellow !important;}
+select {color: #000}
+</STYLE>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Gym Timetable</title>
+</head>
+<body>
+<!--[if lte IE 6]>
+<div id="ie-message">
+InfoHub is not supported on Internet Explorer 6 - please upgrade to a newer version
+</DIV>
+<![endif]-->
+<div id="container">
+<div id="breadcrumbs">
+<h1>Gym Timetable</h1>
+</div><!--/breadcrumbs-->
+<div id="main">
+<!-- ** END OF INFOHUB OPENDOC ** -->
+<div ID="pagebar">
+<form action="W_HU_REPORTING.P_LAUNCH_REPORT" method="GET" class="selector">Select Date:&nbsp;&nbsp;<select name="p_code1" onchange='this.form.submit()'>
+<option selected="selected" value="01-OCT-2021">Fri 01 Oct 2021</option>
+<option value="02-OCT-2021">Sat 02 Oct 2021</option>
+<option value="03-OCT-2021">Sun 03 Oct 2021</option>
+<option value="04-OCT-2021">Mon 04 Oct 2021</option>
+<option value="05-OCT-2021">Tue 05 Oct 2021</option>
+<option value="06-OCT-2021">Wed 06 Oct 2021</option>
+<option value="07-OCT-2021">Thu 07 Oct 2021</option>
+</select><input type="hidden" name="p_report" value="SW300" /><input type="hidden" name="p_parameters" value="A450F95C75D0F126D32D1FF64557FC5BF77DACB8464FEC2DFCF04F98F483A5D38192B2B11EC160B11A432FEDAE4C7275AA327D41573D8C93F1174F33822BF6457C95DE65CEA28A2CC4FC9E67FE48C6AC39973F4B7423F914094F209F25354152" /></form></div><!-- pagebar -->
+<div class="row">
+<div class="col-sm-12">
+<div class=narrative>
+<a href=W_HU_MENU.P_PUBLISH?p_tag=GYMBOOK class=menubutton>Refresh</a>&nbsp;<BR></div>
+<div class=module id=SW300-1>
+<script type="text/javascript" src="/javascript/hubtable_v1_1.js"></script>
+<script> function tickall(oForm,colname)
+                                  {                       
+                                    var x=document.getElementsByName("a_" + colname);
+                                    for (i = 0; i < oForm.length; i++)
+                                       if (oForm.elements[i].name == colname) 
+                                          oForm.elements[i].checked = x[0].checked;
+                                  }   </script>
+<table  CLASS="plaintable" >
+<tr>
+<TD>
+<TABLE CLASS="datadisplaytable " ID="SW300-1Q">
+<THEAD><tr><TH class="aligntext header0">Time</TH>
+<TH class="aligntext header0">Class</TH>
+<TH class="aligntext header0">Duration</TH>
+<TH class="aligntext header0">Location</TH>
+<TH class="aligntext header0">Class Type</TH>
+<TH class="aligntext header0 no-sort"></TH>
+
+</tr></THEAD><TBODY>
+</TBODY><TFOOT>
+<tr>
+<td colspan="6" CLASS="dddefault"><p class="leftaligntext">No classes are scheduled for the remainder of this day</td>
+</tr></TFOOT></table></TD>
+</tr>
+</table>
+<i>Booking is available 180 minutes before each class starts.</i><BR>
+<i>You can cancel this booking up to 10 minutes before the start time. Please do so if you cannot attend as places are in high demand.</i>&nbsp;<BR><br />
+</DIV><!--/module-->
+</div></div>
+
+<div class="navbar navbar-default" role="navigation">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#container .navbar-collapse">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="navbar-collapse collapse">
+<ul class="nav navbar-nav navbar-right">
+</ul>
+</div><!--/.nav-collapse -->
+</div><!--/.container-fluid -->
+</DIV>
+</div><!--/main-->
+<script src="/infohub3/js/bootstrap.min.js"></script>
+</div><!--container -->
+</body>
+</html>
